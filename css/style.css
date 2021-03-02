@@ -7,42 +7,24 @@
 
 body {
   background-color: #BEBEBE;
-  }
-
-/* Estilizando banners */
-.banner {
-  width: 100%;
-}
-
-main {
-  margin-top: -5%;
-  margin-bottom: -35%;
 }
 
 p {
   font-weight: bold;
 }
 
-/* estilizando cards */
-.container {
-  width: 100%; 
-  height: 100%; 
-  margin: 0 auto;
-  text-align: center;
-  font-size: 12px;
-
+main {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  position: relative;
 }
 
 .card {
   width: 260px;
   background-color: #fff;
   border-radius: 15px;
-  margin: 15px;
+  margin: -35px 15px 50px 15px;
 }
 
 .card_header {
@@ -52,7 +34,7 @@ p {
   font-weight: bold;
   font-size: 28px;
   border-radius: 15px 15px 0 0;
-  
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -63,14 +45,12 @@ p {
   color: #a5a5a5;
   padding-top: 15px;
   padding-bottom: 10px;
-  margin-bottom: 0px;
   font-size: 12px;
-   
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
 }
 
 .card_body img{
@@ -83,9 +63,7 @@ p {
 
 .card_footer{
   background-color: #F4F4F4;
-  align-items: center;
   text-align: center;
-  position: relative;
   height: 130px;
   padding-bottom: 25px;
   border-radius: 0 0 15px 15px;
@@ -134,23 +112,16 @@ p {
 }
 
 /* Estilizando Footer */
-#beneficios_finais {
-  align-items: center;
+footer {
+  display: flex;
+  justify-content: center;
   text-align: center;
   color: #ffffff;
   background-image: linear-gradient(to right, #910C18 , #E4212A);
-  padding-top: 3%;
-  padding-right: 10%;
-  padding-left: 10%;
-  
-
-  display: flex;
-  justify-content: center;
-  margin-top: 35%;
+  padding: 60px 100px;
 }
 
 .logo_rodape {
-  margin-top: -20px;
   width: 105px;
   height: 60px;
 }
@@ -169,31 +140,29 @@ p {
   padding: 15px;
 }
 
-#wifi_plus1 {
-  margin-top: 1%;
+.banner{
+  width: 100%;
 }
 
-#now_filmes_online {
-  margin-top: 1%;
-}
-
-#claro_assist{
-  margin-top: -1%;
-}
-
-#net_claro_wifi {
-  margin-top: -1%;
+.banner_mobile {
+  width: 100%;
+  display: none;
 }
 
 /* Responsivo */
 
-@media (min-width:600px) {
-  .banner_mobile {
-      display: none;
+@media (max-width: 768px) {
+  footer {
+    padding: 40px 20px;
   }
 
-  .banner {
-      width: 100%;
+  .card{
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  main{
+    padding: 0 20px;
   }
 }
 
@@ -203,39 +172,25 @@ p {
   }
   
   .banner_mobile{
-    width: 100%;
+    display: block;
   }
 
-.container {
-  margin-top: -6%;
-  flex-direction: column;
-}
+  main {
+    flex-direction: column;
+    padding: 20px 0;
+  }
 
   .card {
     align-items: center;
-    margin-top: 1px;
+    margin: 10px;
   }
 
-  #beneficios_finais {
+  footer {
     flex-direction: column;
-    margin-top: 40%;
-    padding: 10%;
     align-items: center;
   }
 
-  #wifi_plus1 {
-    margin-top: 12%;
-  }
-  
-  #now_filmes_online {
-    margin-top: 12%;
-  }
-  
-  #claro_assist{
-    margin-top: 16%;
-  }
-  
-  #net_claro_wifi {
-    margin-top: 15%;
+  footer > div{
+    margin-top: 20px;
   }
 }
