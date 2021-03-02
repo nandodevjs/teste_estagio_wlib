@@ -15,7 +15,8 @@ body {
 }
 
 main {
-  height: 350px;
+  margin-top: -5%;
+  margin-bottom: -35%;
 }
 
 p {
@@ -134,14 +135,14 @@ p {
 
 /* Estilizando Footer */
 #beneficios_finais {
-  height: 300px;
   align-items: center;
   text-align: center;
   color: #ffffff;
   background-image: linear-gradient(to right, #910C18 , #E4212A);
-  padding-left: 80px;
-  padding-right: 80px;
-  margin-top: 380px;
+  padding-top: 3%;
+  padding-right: 10%;
+  padding-left: 10%;
+  
 
   display: flex;
   justify-content: center;
@@ -169,19 +170,19 @@ p {
 }
 
 #wifi_plus1 {
-  margin-top: 15px;
+  margin-top: 1%;
 }
 
 #now_filmes_online {
-  margin-top: 10px;
+  margin-top: 1%;
 }
 
 #claro_assist{
-  margin-top: 20px;
+  margin-top: -1%;
 }
 
 #net_claro_wifi {
-  margin-top: 15px;
+  margin-top: -1%;
 }
 
 /* Responsivo */
@@ -206,7 +207,7 @@ p {
   }
 
 .container {
-  margin-top: 110%;
+  margin-top: -6%;
   flex-direction: column;
 }
 
@@ -217,5 +218,24 @@ p {
 
   #beneficios_finais {
     flex-direction: column;
+    margin-top: 40%;
+    padding: 10%;
+    align-items: center;
+  }
+
+  #wifi_plus1 {
+    margin-top: 12%;
+  }
+  
+  #now_filmes_online {
+    margin-top: 12%;
+  }
+  
+  #claro_assist{
+    margin-top: 16%;
+  }
+  
+  #net_claro_wifi {
+    margin-top: 15%;
   }
 }
