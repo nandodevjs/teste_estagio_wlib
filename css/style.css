@@ -121,6 +121,10 @@ footer {
   padding: 60px 100px;
 }
 
+.vantagem {
+  display: none;
+}
+
 .logo_rodape {
   width: 105px;
   height: 60px;
@@ -192,5 +196,13 @@ footer {
 
   footer > div{
     margin-top: 20px;
+  }
+
+  .vantagem {
+    font-size: 2em;
+    margin-top: auto;
+
+    display: flex;
+    flex-direction: column;
   }
 }
